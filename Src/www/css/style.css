@@ -1,91 +1,33 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic;
+}
+
+.appcontent {
+
+  background-color: #BEBEBE;
+}
+
+.appinput{
+
+    
+    border-color: transparent !important;
+    border-radius: 10px;
+}
+.appcalader {
+    border-top: 7px solid #FA4B4B;
+    border-right: 1px solid #FA4B4B;
+    border-left: 1px solid #FA4B4B;
+    border-bottom: 1px solid #FA4B4B;
+    color: #FFFFFF;
+    padding: 4px;
+    font-size: initial;
+}
+
 .pushmenu { /*this is the nav*/
-  background: #3c3933;
-  font-family: Arial, Helvetics, sans-serif;
-  width: 240px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
-  position:fixed;
-}
-
-.pushmenu h3 {
-  color: #cbbfad;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 15px 20px;
-  margin: 0;
-  background: #282522;    
-  height: 16px;
-}
-
-.pushmenu a {
-  display: block; /* drops the nav vertically*/
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-top: 1px solid #56544e;
-  border-bottom: 1px solid #312e2a;
-  padding: 14px;
-}
-
-.pushmenu a:hover {
-  background:#00A287;
-}
-
-.pushmenu a:active {
-  background: #454f5c;
-  color: #fff;
-}
-
-.pushmenu-left {
-  left: -240px;
-
-}
-
-.pushmenu-left.pushmenu-open {
-  left: 0;
-}
-
-.pushmenu-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-}
-
-.pushmenu-push-toright {
-  left: 240px;
-}
-
-/*Transition*/
-.pushmenu, .pushmenu-push {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;  
-}
-
-#nav_list {
-  background: url(http://www.onlywebpro.com/demo/jquery/icon_nav.png) no-repeat left top;
-  cursor: pointer;
-  height: 27px;
-  width: 33px;
-  text-indent: -99999em;
-}
-
-nav-list.active {
-  background-position: -33px top;
-}
-
- .buttonset {
-      background: #00A287;
-      height: 16px;
-      padding: 10px 20px 20px;
- }
- 
- section.content {
-   font-family: Arial, Helvetica, sans-serif;
-   padding: 10px 20px;
- }.pushmenu { /*this is the nav*/
   background: #3c3933;
   font-family: Arial, Helvetics, sans-serif;
   width: 240px;
@@ -187,6 +129,7 @@ nav-list.active {
     box-shadow: 0 0 15px #0F62AA;
  }
 
+
  .button-float{
      background-color:#1143FA !important;
   background: $assertive !important;
@@ -207,7 +150,7 @@ nav-list.active {
 }
 
   .button-float-left{
-     background-color:red !important;
+     background-color:#28A54C !important;
   background: $assertive !important;
   color:white !important;
   z-index: 12 !important;
@@ -230,4 +173,14 @@ nav-list.active {
   transform: translate3d(0, -1px, 0) !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
     background: darken($assertive, 10%) !important;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#1E1E1E;
+    overflow:hidden;
 }
